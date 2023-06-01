@@ -4,9 +4,9 @@ import config from './config/index'
 
 async function database() {
   try {
-    await mongoos.connect(config.database_url as string)
+    await mongoose.connect(config.database_url as string)
     app.listen(config.port, () => {
-      console.log('Server started successfully on port ', config.port)
+      console.log('Server started successfully on port :', config.port)
     })
     console.log('Database connect successfully')
   } catch (err) {
