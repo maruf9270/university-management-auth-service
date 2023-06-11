@@ -11,15 +11,11 @@ const createUser = async (user: Iuser): Promise<Iuser | null> => {
   if (!user.password) {
     user.password = config.default_user_pass as string
   }
-  if (!createUser) {
-    throw new Error('failed to create user')
-  }
 
   const createdUser = await User.create(user)
 
   return createdUser
 }
-
-export default {
+export const UserServices = {
   createUser,
 }

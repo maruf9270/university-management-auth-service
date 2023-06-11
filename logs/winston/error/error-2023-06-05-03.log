@@ -1,0 +1,3 @@
+Invalid Date NaN:NaN:NaN [error] error: Faild to connect to the database The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+undefined
+Mon Jun 05 2023 3:16:47 [error] error: Faild to connect to the database The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.

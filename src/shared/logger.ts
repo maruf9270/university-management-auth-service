@@ -35,7 +35,7 @@ const logger = createLogger({
 
 const errorLogger = createLogger({
   level: 'error',
-  format: combine(label({ label: 'error' }), myFormat, timestamp()),
+  format: combine(label({ label: 'error' }), timestamp(), myFormat),
   transports: [
     new transports.Console(),
     new DailyRotateFile({

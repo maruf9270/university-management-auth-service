@@ -1,15 +1,15 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
-    },
-    "auditLog": "G:\\Web Development\\Level-2\\New folder\\module-11\\university-management-auth-service\\logs\\winston\\error\\.4599b554d125d3ae6d0cdb0d1abc429cff7f7c8f-audit.json",
-    "files": [
-        {
-            "date": 1685958777680,
-            "name": "G:\\Web Development\\Level-2\\New folder\\module-11\\university-management-auth-service\\logs\\winston\\error\\error-2023-06-05-02.log",
-            "hash": "cfeb7954824b34585059038b956933fc7146de2e5479b11bab54b8f858b55dd1"
-        }
-    ],
-    "hashType": "sha256"
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "G:\\Web Development\\Level-2\\New folder\\module-11\\university-management-auth-service\\logs\\winston\\error\\.4599b554d125d3ae6d0cdb0d1abc429cff7f7c8f-audit.json",
+  "files": [
+    {
+      "date": 1685958777680,
+      "name": "G:\\Web Development\\Level-2\\New folder\\module-11\\university-management-auth-service\\logs\\winston\\error\\error-2023-06-05-02.log",
+      "hash": "cfeb7954824b34585059038b956933fc7146de2e5479b11bab54b8f858b55dd1"
+    }
+  ],
+  "hashType": "sha256"
 }

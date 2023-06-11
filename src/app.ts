@@ -1,6 +1,7 @@
 import express, { Application, Request, Response } from 'express'
 import cors from 'cors'
-import userRoute from './app/modules/users/user.route'
+import { UserRoute } from './app/modules/users/user.route'
+import globalErrorHandler from './app/modules/users/middlewares/globalErrorHandler'
 export const app: Application = express()
 export const port = process.env.PORT || 5000
 
@@ -17,4 +18,7 @@ app.get('/', async (req: Request, res: Response) => {
 })
 
 // Application routes
-app.use('/api/v1/users/', userRoute)
+app.use('/api/v1/users/', UserRoute.router)
+
+// Using globalErrorHandler
+app.use(globalErrorHandler)
