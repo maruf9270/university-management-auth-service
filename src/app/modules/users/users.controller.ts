@@ -6,7 +6,7 @@ const createUser: RequestHandler = async (
   next: NextFunction
 ) => {
   try {
-    const { user } = req.body
+    const user = req.body
     const result = await UserServices.createUser(user)
     res.status(200).json({
       success: true,
