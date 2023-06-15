@@ -1,13 +1,13 @@
 /* eslint-disable no-console */
 /* eslint-disable no-unused-expressions */
 import { ErrorRequestHandler, NextFunction, Request, Response } from 'express'
-import config from '../../../../config/index'
-import { IGenericError } from '../../../../interfaces/error'
-import { handleValidationError } from '../../../../errors/handleValidationError'
-import ApiError from '../../../../errors/ApiError'
-import { errorLogger } from '../../../../shared/logger'
+import config from '../../config/index'
+import { IGenericError } from '../../interfaces/error'
+import { handleValidationError } from '../../errors/handleValidationError'
+import ApiError from '../../errors/ApiError'
+import { errorLogger } from '../../shared/logger'
 import { ZodError } from 'zod'
-import handleZodError from '../../../../errors/handleZodError'
+import handleZodError from '../../errors/handleZodError'
 
 const globalErrorHandler: ErrorRequestHandler = (
   error,

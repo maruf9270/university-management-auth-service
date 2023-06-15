@@ -26,3 +26,12 @@ export const academicSemisterTitle: IAcademicSemisterTitle[] = [
 ]
 
 export const academicSemisterCode: IAcademicSemisterCode[] = ['01', '02', '03']
+
+// For validating academicSemister code
+const academicSemisterCodeMapper: { [key: string]: string } = {
+  Autumn: '01',
+  Summer: '02',
+  Fall: '03',
+}
+
+export default academicSemisterCodeMapper
